@@ -1,0 +1,100 @@
+Linux commands
+
+Basic File/Directory commands:
+
+pwd - Print Working Directory
+touch - Create a file
+mkdir - create a folder
+ls - list files and folders within the directory
+rm - remove a file
+rmdir - remove a directory
+rm -rf - remove all contents recursively
+ls -lart - List all files and directories in reverse order based on time
+cd - change directory
+clear - clear the console
+history - Show the last ran 500 commands
+grep - Search & find the values
+mv - move files 
+cp copy files
+echo - print command
+cat - View the file content
+whoami - Show Current logged in user
+head - get beginning values
+tail - get end values
+sort - Sort the file contents
+sleep - Used to pause the terminal for a period of time
+uniq - Used to filter the matching lines from a file
+tr - Used to translate or delete characters from a file
+sed - Stream Editor or in place editor for files.
+sed -i -e 's+good+come+g' - Edit the contents directly on the file
+sed 's+good+come+g' - Edit the contents to show only in the console
+
+Groups & Permissions Commands:
+chmod - Used to change the permissions of a file/dir
+chown -Used to change the ownership of a file/dir
+vi - visual editor for files
+
+ vi filename - Open the file in edit mode
+ i - Insert contents
+ esc --> :wq! - Save & exit
+ esc --> :q!  - Exit without saving.
+ esc --> :set number - Assign row number
+ esc --> :set nonumber -Remove assigned row number
+ esc --> :1,$d - Delete rows in a file
+
+sudo group add groupname - Used to create groups
+getent group - To get all groups (cat /etc/group)
+sudo groupdel groupname -Used to delete a group
+sudo usermod -aG groupname username - Used to add a user in a group
+getent passwd - To get all users
+sudo useradd username - Used to create an user
+sudeo userdel username - Used to delete an user
+id username - Used to get information about a particular user
+sudo - Enables the user to run commands with elevated privileges. In simple as a root user
+
+
+Date & Calendar commands:
+cal - To Show Calendar
+date - To show current date
+
+Tar Commands:
+tar -cvzf outputfilename.tar.gz sourcefolder - Used to create tar (kinda zipped files, tar - Tape archive)
+tar -xzf outputfilename.tar.gz targetfolder - Used to untar the tarred files
+
+Machine Utilization commands:
+df - Show Disk Utilization
+free - Show RAM free space
+top /htop - CPU Utilization
+ps aux - Get all the running processes
+
+Login Commands:
+ssh - Used to login into a remote server securely
+scp - Used to copy files b/w two systems securely via ssh
+
+
+Network Commands:
+ping - Used to test the connectivity between two machines
+curl - Used for transferring data between servers, clients.
+telnet - Allows us to establish a connection to a remote computer and also used to check port status
+nslookup - Used to query DNS to obtain IP address or domain name
+dig - Used to query DNS to obtain IP address or domain name in Modern systems.
+netstat - Show the information about the network connections and statistics.
+traceroute - Used to trace the route taken by packets across an IP network
+
+Git Commands:
+git clone repository url - Used to clone the remote repository to the local PC.
+git add . - Add all the changes to the Staging area
+git status - Check the status of the Staging area
+git commit - Used to save all to a local repository along with commit message
+git branch - List all branches
+git branch branchname - create a new branch
+git branch -b branchname - create a new branch and switch to it
+git checkout branchname - Switch to a branch
+git branch -d branchname - Delete a branch
+git branch -m oldname newname - Rename a branch
+git init - Used to create a empty git repo in local
+git push origin branchname - Used to puch the local changes to a remote repository.
+git pull origin branchname - Used to fetch and merge changes from remote repo to local repo.
+git restore --staged filename - Used to unstage changes
+git restore filename - Used to discard the changes made to a file
+git revert commitID - Used to revert back the commit made on the local repo.
