@@ -1,0 +1,18 @@
+Sudo apt install docker.io - Command to install docker
+
+docker build -t name:tag . - Command to create docker image file
+
+docker run -d -p 80:80 name:tag - Start the docker container in a detached mode.
+
+docker ps - Command to get running containers
+
+docker -a - Command to get all containers
+
+docker stop containerID - Stop a running container
+
+docker images - List docker images
+
+docker rmi dockerimagename - To Remove docker image
+
+docker rm containername or ID - To Remove container.
+
