@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Test1
+    ports:
+      - "80:80"
+    volumes:
+      - nginxdata:/var/opt/nginx
+volumes:
+  nginxdata:

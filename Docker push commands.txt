@@ -1,0 +1,2 @@
+docker tag ubuntu_app1:latest santhoshkumarv26/myfirstrepo:ubuntu_nginx
+docker push santhoshkumarv26/myfirstrepo:ubuntu_nginx
